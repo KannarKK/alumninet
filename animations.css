@@ -1,0 +1,60 @@
+#animated {
+animation-name: test-animation;
+animation-duration: 4s;
+animation-iteration-count: 10;
+animation-direction: alternate;
+animation-timing-function: linear;
+-moz-animation-name: test-animation;
+-moz-animation-duration: 4s;
+-moz-animation-iteration-count: 10;
+-moz-animation-direction: alternate;
+-moz-animation-timing-function: linear;
+-webkit-animation-name: test-animation;
+-webkit-animation-duration: 4s;
+-webkit-animation-iteration-count: 10;
+-webkit-animation-direction: alternate;
+-webkit-animation-timing-function: linear;
+
+background-color: red;
+border: thin solid black;
+width: 20px;
+height 20px;
+position:absolute;
+}
+@-moz-keyframes test-animation {
+  from {
+  left: 0px;
+}
+50% {
+ left: 300px;
+ width: 50px;
+ background-color:green;
+}
+to {
+ left: 600px;
+}
+}
+@-webkit-keyframes test-animation {
+  from {
+  left: 0px;
+}
+50% {
+ left: 300px;
+ width: 50px;
+}
+to {
+ left: 600px;
+}
+}
+@keyframes test-animation {
+  from {
+  left: 0px;
+}
+50% {
+ left: 300px;
+ width: 50px;
+}
+to {
+ left: 600px;
+}
+}

@@ -1,0 +1,39 @@
+#header {height:100px; width:100%; border:1px solid #999;}
+html { margin : 0px;  padding: 0; } 
+body { 
+
+	background:  transparent url("rvlogo.jpeg") no-repeat left top;
+	
+	margin: 10px;
+	text-align: center;
+}
+h1 { color:red; margin: 50px; margin-left:200px;letter-spacing: 2px;}
+h4:hover { color: green;  padding: 10px 20px 20px 20px; 
+     font:bold 12px Arial;}
+em { color: gold;}
+p { color: green; background-color: yellow; padding: 10px 20px 20px 20px; 
+     font:bold 12px Arial;}
+p:hover{ color: yellow; background-color:green; }
+
+p:active {color:black;}
+#div1 {
+  
+  
+ background-color: rgb(204, 204, 0);
+ transition-property: box-shadow, background-color;
+ transition-duration: 500ms, 2s;
+ -webkit-transition-property: box-shadow, background-color;
+ -webkit-transition-duration: 500ms, 2s;
+ -moz-transition-property: box-shadow, background-color;
+ -moz-transition-duration: 500ms, 2s;
+ -o-transition-property: box-shadow, background-color;
+ -o-transition-duration: 500ms, 2s;
+ 
+}
+#div1:hover {
+ box-shadow: 3px 3px 4px 1px black;
+ color: rgb(255, 255, 255);
+ background-color: rgb(102, 102, 102);
+ border: 2px solid;
+
+}
