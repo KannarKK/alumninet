@@ -1,0 +1,57 @@
+
+
+<! DOCTYPE html PUBLIC = "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="basic.css"/>
+<link rel="stylesheet" type="text/css" href="animations.css"/>
+
+</head>
+<body>
+<h1> R.V.C.E ALUMNI DATABASE SYSTEM </h1>
+
+<font color = "0x00ff"  face ="sans-serif" size= 4>
+<div id="div1"> Enter your details here:</div>
+<form action="signin.php" method="post">
+<br>
+First name: <input type="text" name="firstname"
+ONCHANGE= 
+"var pattern=/[0-9]/; if(pattern.test(this.value))
+				alert('Invalid name. Please enter again')
+				"><BR>
+			
+Last name: <input type="text" name="lastname"
+ONCHANGE= 
+"var pattern=/[0-9]/; if(pattern.test(this.value))
+				alert('Invalid name. Please enter again')
+				"><BR>
+			
+USN:  &nbsp;&nbsp;&nbsp;  <input type="text" name="name" size = 10 MAXLENGTH = 10 ><BR>
+Age: &nbsp;&nbsp;&nbsp;<input type="number" name="age"  
+ONCHANGE= 
+"var pattern=/[^0-9]/; if(((this.value)<=0) ||(pattern.test(this.value)))
+				alert('Invalid age. Please enter again')"><BR>
+<BR><BR> 
+Sex:<BR>
+<input type="radio" name="sex" value="male">Male 
+<input type="radio" name="sex" value="female">Female
+<BR><BR>
+Mail-id: <input type="text" name="mail"><br>
+Phone no. <input type="text" name ="phone"><br>
+<BR>Password: <input type="password" name="pwd"><br>
+Confirm Password: <input type="password" name="pwd_repeat"><br>
+
+<BR><BR>Select Type &nbsp;&nbsp; <SELECT NAME ="type" SIZE= 0>
+		<OPTION VALUE = student >student
+		<OPTION VALUE = teacher > teacher
+		<OPTION VALUE = alumni> alumni
+		</SELECT>
+</font>
+<BR><input type="submit"  value="submit"><input type="reset" value= "clear">
+</form>
+<p><i>We shall get back to you soon. </i> </p>
+
+</body>
+</html>
